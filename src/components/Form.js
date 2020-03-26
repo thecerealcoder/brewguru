@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState} from 'react'
 import Breweries from "./Breweries"
 import NotFound from "./NotFound"
 
@@ -12,29 +12,23 @@ function Form() {
     function handleChange(evt) {
         if(evt.key === "Enter") {
                 document.getElementById("inputDiv").classList.toggle("fadeOut")
-                document.body.classList.toggle("found") 
-                console.log(document.getElementById("inputDiv").classList)
-         fetch(`${apiBase}${query}`)
-            .then(res => res.json())
-            .then(result => {
-                setBrewery(result)
-                setQuery("")
-            })   
-        }
+                document.body.style.backgroundImage = `url(https://www.publicdomainpictures.net/pictures/30000/velka/plain-white-background.jpg)`
+                document.body.style.backgroundSize = "contain"
+                document.body.style.backgroundAttachment = "fixed"
+                document.body.classList.add("found") 
+                fetch(`${apiBase}${query}`)
+                    .then(res => res.json())
+                    .then(result => {
+                        setBrewery(result)
+                        setQuery("")
+                        console.log(result)
+                    })   
+                }
     }
 
     return(
-        <div>
-            {(brewery.length !== undefined) &&
-                (brewery.length !== 0 ?
-                    brewery.map(brewery => (
-                        <Breweries key={brewery.id} brewery={brewery} />
-                    ))
-                     : 
-                    <NotFound />
-                )
-            }
-            <div id="inputDiv">
+        <div className="container">
+             <div id="inputDiv">
                 <h1>Enter your Zipcode</h1>
                 <input 
                     type="text"
@@ -45,6 +39,15 @@ function Form() {
                     value={query}
                 />
             </div>
+            {(brewery.length !== undefined) &&
+                (brewery.length !== 0 ?
+                    brewery.map(brewery => (
+                        <Breweries key={brewery.id} brewery={brewery} />
+                    ))
+                     : 
+                    <NotFound />
+                )
+            }
         </div>
     )
 }
