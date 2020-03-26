@@ -2,21 +2,23 @@ import React, {useState} from 'react'
 import Breweries from "./Breweries"
 import NotFound from "./NotFound"
 
-const apiBase = "https://api.openbrewerydb.org/breweries?by_postal="
+const apiBase = {
+                    city:"https://api.openbrewerydb.org/breweries?by_city=",
+                    state:"https://api.openbrewerydb.org/breweries?by_state=",
+                    name:"https://api.openbrewerydb.org/breweries?by_name="
+                }
 
 function Form() {
 
+    const [search, setSearch] = useState("city")
     const [query, setQuery] = useState("")
     const[brewery, setBrewery] = useState({})
 
     function handleChange(evt) {
         if(evt.key === "Enter") {
                 document.getElementById("inputDiv").classList.toggle("fadeOut")
-                document.body.style.backgroundImage = `url(https://www.publicdomainpictures.net/pictures/30000/velka/plain-white-background.jpg)`
-                document.body.style.backgroundSize = "contain"
-                document.body.style.backgroundAttachment = "fixed"
                 document.body.classList.add("found") 
-                fetch(`${apiBase}${query}`)
+                fetch(`${apiBase[search]}${query}`)
                     .then(res => res.json())
                     .then(result => {
                         setBrewery(result)
@@ -29,11 +31,26 @@ function Form() {
     return(
         <div className="container">
              <div id="inputDiv">
-                <h1>Enter your Zipcode</h1>
+                <div id="radioButtons">
+                    <label>
+                        City:
+                        <input type="radio" name="search" value="city" onChange={ev=> setSearch(ev.target.value)} checked={search === "city"} />
+                    </label>
+                    &nbsp;
+                    <label>
+                        State:
+                        <input type="radio" name="search" value="state" onChange={ev=> setSearch(ev.target.value)} checked={search === "state"} />
+                    </label>
+                    &nbsp;
+                    <label>
+                        Name:
+                        <input type="radio" name="search" value="name" onChange={ev=> setSearch(ev.target.value)} checked={search === "name"} />
+                    </label>
+                </div>
                 <input 
                     type="text"
-                    name="zipcode"
-                    placeholder="zipcode"
+                    name="query"
+                    placeholder={`Search by ${search}...`}
                     onChange={ev => setQuery(ev.target.value)}
                     onKeyPress={handleChange}
                     value={query}

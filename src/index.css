@@ -41,6 +41,14 @@ code {
   margin-right: 20px;
 }
 
+input[type="text"] {
+  border-radius: 10px;
+  min-height: 20px;
+  min-width: 200px;
+  text-indent: 5px;
+  outline: none;
+}
+
 
 #inputDiv {
   min-width: 300px;
@@ -62,6 +70,10 @@ code {
   margin-right: auto;
 }
 
+#radioButtons {
+  margin-bottom: 10px;
+}
+
 .found{
   background: url("https://www.publicdomainpictures.net/pictures/30000/velka/plain-white-background.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -70,6 +82,24 @@ code {
 .flex {
   display: flex;
   align-items: center;
+}
+
+.notFound {
+  font-size:18px;
+  margin-left:30px;
+  width: 25%;
+  margin: 0 auto;
+  margin-bottom:15px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background: rgba(255, 255, 0, .85);
+  transition: transform .1s ease;
+  min-height: 60px;
+  
+}
+
+.notFound p {
+  margin: 0 auto;
 }
 
 .container {
@@ -113,6 +143,7 @@ p{
 
 #location:hover span, #location:hover i {
   color: white;
+  cursor: pointer;
 }
 
 
