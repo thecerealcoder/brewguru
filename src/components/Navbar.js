@@ -4,8 +4,9 @@ function Navbar() {
 
 
 function handleClick() {
-    document.getElementById("inputDiv").classList.toggle("fadeOut");
-    console.log("click")
+    if(document.getElementById("inputDiv") !== null) {
+        document.getElementById("inputDiv").classList.toggle("fadeOut");
+    }
 }
 
     return(

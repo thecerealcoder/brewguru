@@ -9,8 +9,10 @@ function Breweries(props) {
     }
 
     function queryParser(query) {
-        query = query.replace(/ /g, '+')
-        return query
+        if(query !== undefined) {
+            query = query.replace(/ /g, '+')
+            return query
+        }
     }
 
     return(

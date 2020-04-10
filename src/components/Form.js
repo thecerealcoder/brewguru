@@ -23,7 +23,6 @@ function Form() {
                     .then(result => {
                         setBrewery(result)
                         setQuery("")
-                        console.log(result)
                     })   
                 }
     }
@@ -48,6 +47,7 @@ function Form() {
                     </label>
                 </div>
                 <input 
+                    id="searchBar"
                     type="text"
                     name="query"
                     placeholder={`Search by ${search}...`}
@@ -59,7 +59,7 @@ function Form() {
             {(brewery.length !== undefined) &&
                 (brewery.length !== 0 ?
                     brewery.map(brewery => (
-                        <Breweries key={brewery.id} brewery={brewery} />
+                        <Breweries brewery={brewery} />
                     ))
                      : 
                     <NotFound />
