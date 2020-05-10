@@ -1,4 +1,4 @@
-# COVID-19 Tracker
+# BrewGuru
 Brewery finder app created with Node.js and React
 
 ![Demo](./public/demo.gif)
