@@ -18,7 +18,7 @@ Project is created with:
 
 ## Resources
 * [OpenBreweryDB API](https://www.openbrewerydb.org/)
-* [Google Maps Static API](https://developers.google.com/maps/documentation/maps-static/intro)
+* [Google Maps Static API](https://developers.google.com/maps/documentation/maps-static/intro) <sup>[*](#footnote)</sup>
 
 ## Setup
 To run this project, install it locally using npm:
@@ -28,3 +28,5 @@ $ cd ../lorem
 $ npm install
 $ npm start
 ```
+
+<a name="footnote">* </a>: You must generate your own API key in order for this project to work. 
