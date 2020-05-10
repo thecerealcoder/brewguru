@@ -11,6 +11,7 @@ function handleClick() {
 
     return(
         <div id="navbar">
+            <div></div>
             <h1>BrewGuru</h1>
             <i 
                 className="fas fa-search"
