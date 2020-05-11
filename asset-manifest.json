@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/brewguru/static/css/main.a5a9402c.chunk.css",
+    "main.js": "/brewguru/static/js/main.fc3b2c3f.chunk.js",
+    "main.js.map": "/brewguru/static/js/main.fc3b2c3f.chunk.js.map",
+    "runtime-main.js": "/brewguru/static/js/runtime-main.f5949808.js",
+    "runtime-main.js.map": "/brewguru/static/js/runtime-main.f5949808.js.map",
+    "static/js/2.f87562b1.chunk.js": "/brewguru/static/js/2.f87562b1.chunk.js",
+    "static/js/2.f87562b1.chunk.js.map": "/brewguru/static/js/2.f87562b1.chunk.js.map",
+    "index.html": "/brewguru/index.html",
+    "precache-manifest.046f6a929204cd1f43473df2ed40b3f3.js": "/brewguru/precache-manifest.046f6a929204cd1f43473df2ed40b3f3.js",
+    "service-worker.js": "/brewguru/service-worker.js",
+    "static/css/main.a5a9402c.chunk.css.map": "/brewguru/static/css/main.a5a9402c.chunk.css.map",
+    "static/js/2.f87562b1.chunk.js.LICENSE.txt": "/brewguru/static/js/2.f87562b1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f5949808.js",
+    "static/js/2.f87562b1.chunk.js",
+    "static/css/main.a5a9402c.chunk.css",
+    "static/js/main.fc3b2c3f.chunk.js"
+  ]
+}
