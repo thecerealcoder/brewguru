@@ -1,5 +1,5 @@
 # BrewGuru
-Brewery finder app created with Node.js and React
+Brewery finder app created with Node.js and React. **[Live Demo](https://thecerealcoder.github.io/brewguru/)**
 
 ![Demo](./public/demo.gif)
 
