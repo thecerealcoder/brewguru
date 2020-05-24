@@ -1,35 +1,36 @@
-html,body {
+html,
+body {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 body {
-  background: url("https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80") no-repeat center center fixed;
+  background: url(./beerBackground.jpg) no-repeat center center fixed;
   background-size: cover;
   image-rendering: -webkit-optimize-contrast;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: background 1s ease-in-out;
+  overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-#navbar { 
+#navbar {
   position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
-  height:60px;
-  background: black;
-  border-bottom: 1px solid white;
+  height: 60px;
+  background-color: rgba(52, 42, 40, 0.85);
+  z-index: 1;
 }
 
 #navbar h1 {
@@ -42,41 +43,44 @@ code {
 }
 
 input[type="text"] {
-  border-radius: 10px;
-  min-height: 20px;
-  min-width: 200px;
+  border-radius: 5px;
+  min-height: 20%;
+  min-width: 90%;
   text-indent: 5px;
   outline: none;
+  font-size: 20px;
 }
 
-
 #inputDiv {
-  min-width: 300px;
-  min-height: 40px;
+  font-size: 22px;
+  min-width: 80%;
+  min-height: 10%;
   text-align: center;
   position: fixed;
-  border-radius: 10px;
   color: white;
-  background: rgba(0, 0, 0, .85);
+  background-color: rgba(52, 42, 40, 0.85);
   padding: 20px;
-  width: 25%;
   border: 1px solid white;
   transition: opacity 1s ease;
   pointer-events: all;
-  top: 40%;
+  top: 30%;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  z-index: 1;
 }
 
 #radioButtons {
   margin-bottom: 10px;
 }
 
-.found{
-  background: url("https://www.publicdomainpictures.net/pictures/30000/velka/plain-white-background.jpg") no-repeat center center fixed;
-  background-size: cover;
+#radioButtons label {
+  margin-right: 10px;
+}
+
+#radioButtons input {
+  margin-left: 10px;
 }
 
 .flex {
@@ -85,71 +89,134 @@ input[type="text"] {
 }
 
 .notFound {
-  font-size:18px;
-  margin-left:30px;
-  width: 25%;
-  margin: 0 auto;
-  margin-bottom:15px;
+  font-size: 20px;
+  padding: 5px;
   border: 1px solid grey;
   border-radius: 10px;
-  background: rgba(255, 255, 0, .85);
-  transition: transform .1s ease;
+  background: rgba(230, 204, 245, 0.85);
+  transition: transform 0.1s ease;
   min-height: 60px;
-  
+  text-align: center;
 }
 
 .notFound p {
   margin: 0 auto;
+  word-break: break-word;
 }
 
 .container {
   padding-top: 75px;
 }
 
-.map {
+.breweryContainer {
   margin: 0 auto;
-  margin-left: 25%;
-  border: 1px solid white;
-  border-radius: 10px;
-  transition: transform .1s ease;
 }
 
-.map:hover{
-  transform:scale(1.25);
-}
-
-.brewery{
-  display: grid;
-  font-size:18px;
-  margin-left:30px;
-  width: 20%;
+.brewery {
+  color: rgb(68, 52, 39);
+  font-size: 18px;
   text-align: center;
-  margin-bottom:15px;
+  margin-bottom: 15px;
   border: 1px solid grey;
   border-radius: 10px;
-  background: rgba(144, 202, 249, .85);
-  transition: transform .1s ease;
-  min-height: 200px;
-  max-height: 200px;
+  background: rgba(255, 255, 255, 0.85);
+  transition: transform 0.1s ease;
 }
 
-.brewery:hover{
+.brewery:hover {
   transform: scale(1.05);
 }
 
-p{
+p {
   word-break: break-all;
 }
 
-#location:hover span, #location:hover i {
-  color: white;
+#location:hover span,
+#location:hover i {
+  color: blue;
   cursor: pointer;
 }
 
-
 .fadeOut {
   opacity: 0;
-  pointer-events: none;
+  pointer-events: none !important;
 }
 
+.map {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 2;
+}
 
+.fa-window-close {
+  position: fixed;
+  top: 5px;
+  bottom: 0px;
+  right: 5px;
+  font-size: 50px;
+  background: white;
+  height: 50px;
+  width: 50px;
+  z-index: 3;
+}
+
+.fa-window-close:hover {
+  color: darkslategray;
+}
+
+button {
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid black;
+  transform: scale(1.2);
+  background-color: rgb(255, 239, 239);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 600;
+}
+
+@media (min-width: 600px) {
+  #inputDiv {
+    min-width: 50%;
+    width: 20%;
+  }
+  .brewery {
+    font-size: 28px;
+    width: 50%;
+    margin: 20px auto;
+  }
+  button {
+    transform: scale(1.5);
+  }
+  .fa-window-close {
+    transform: scale(1.5);
+    top: 5px;
+    right: 12px;
+    height: 40px;
+    width: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .brewery {
+    width: 30%;
+  }
+  #inputDiv {
+    min-width: 40%;
+  }
+  button {
+    font-weight: 400;
+    transform: scale(2);
+  }
+  .fa-window-close {
+    transform: scale(2);
+    top: 10px;
+    right: 25px;
+    height: 40px;
+    width: 50px;
+  }
+}
