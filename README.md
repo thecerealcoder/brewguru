@@ -13,18 +13,20 @@ Brewery finder app created with Node.js and React. **[Live Demo](https://thecere
 
 ## General info
 
-This project uses a public brewery API in unison with the Google Maps Static API to provide an intuitive interface for end users. You can filter by city, state, or name to search for a list of breweries that match your query. In addition, each brewery listing can generate a static Google Maps image of its location.
+This project uses a public brewery API in unison with the Google JavaScript Maps API to provide an intuitive interface for end users. You can filter by city, state, or name to search for a list of breweries that match your query. In addition, each brewery listing can generate an interactive map for simplistic location access.
 
 ## Technologies
 
 Project is created with:
 
 - React (16.13.0)
+- React Google Maps (1.9.2)
+- React Geocode (0.2.0)
 
 ## Resources
 
 - [OpenBreweryDB API](https://www.openbrewerydb.org/)
-- [Google Maps Static API](https://developers.google.com/maps/documentation/javascript/tutorial) <sup>[\*](#footnote)</sup>
+- [Google JavaScript Maps API](https://developers.google.com/maps/documentation/javascript/tutorial) <sup>[\*](#footnote)</sup>
 
 ## Setup
 
