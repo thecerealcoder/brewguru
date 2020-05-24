@@ -20,7 +20,6 @@ function Map(props) {
 
   if (!hasCenter) {
     if (!props.lat !== true && props.lng !== true) {
-      console.log("inside");
       centerHolder = {
         lat: Number(props.lat),
         lng: Number(props.lng),
@@ -28,7 +27,6 @@ function Map(props) {
       setCenter(centerHolder);
       setHasCenter(true);
     } else {
-      console.log("onside");
       Geocode.fromAddress(props.address).then(
         (response) => {
           let { lat, lng } = response.results[0].geometry.location;
@@ -45,8 +43,6 @@ function Map(props) {
       );
     }
   }
-
-  console.log(center);
 
   function handleClick() {
     document.getElementById(props.name).style.opacity = "0%";

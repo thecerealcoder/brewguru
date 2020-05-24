@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Map from "./Map";
-import ReactDOM from "react-dom";
-import { render } from "@testing-library/react";
 
 function Brewery({
   brewery: { name, street, state, city, postal_code, latitude, longitude },
