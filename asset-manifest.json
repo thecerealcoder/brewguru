@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/brewguru/static/css/main.e813fc96.chunk.css",
-    "main.js": "/brewguru/static/js/main.31ebc927.chunk.js",
-    "main.js.map": "/brewguru/static/js/main.31ebc927.chunk.js.map",
+    "main.js": "/brewguru/static/js/main.98eb683f.chunk.js",
+    "main.js.map": "/brewguru/static/js/main.98eb683f.chunk.js.map",
     "runtime-main.js": "/brewguru/static/js/runtime-main.f5949808.js",
     "runtime-main.js.map": "/brewguru/static/js/runtime-main.f5949808.js.map",
-    "static/js/2.cf4cf604.chunk.js": "/brewguru/static/js/2.cf4cf604.chunk.js",
-    "static/js/2.cf4cf604.chunk.js.map": "/brewguru/static/js/2.cf4cf604.chunk.js.map",
+    "static/js/2.4fb87475.chunk.js": "/brewguru/static/js/2.4fb87475.chunk.js",
+    "static/js/2.4fb87475.chunk.js.map": "/brewguru/static/js/2.4fb87475.chunk.js.map",
     "index.html": "/brewguru/index.html",
-    "precache-manifest.54d4ab71b22b676c142d10e8b2e59539.js": "/brewguru/precache-manifest.54d4ab71b22b676c142d10e8b2e59539.js",
+    "precache-manifest.d66432f91a7a1449f8c05880c204fa3d.js": "/brewguru/precache-manifest.d66432f91a7a1449f8c05880c204fa3d.js",
     "service-worker.js": "/brewguru/service-worker.js",
     "static/css/main.e813fc96.chunk.css.map": "/brewguru/static/css/main.e813fc96.chunk.css.map",
-    "static/js/2.cf4cf604.chunk.js.LICENSE.txt": "/brewguru/static/js/2.cf4cf604.chunk.js.LICENSE.txt",
+    "static/js/2.4fb87475.chunk.js.LICENSE.txt": "/brewguru/static/js/2.4fb87475.chunk.js.LICENSE.txt",
     "static/media/index.css": "/brewguru/static/media/beerBackground.542c2805.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f5949808.js",
-    "static/js/2.cf4cf604.chunk.js",
+    "static/js/2.4fb87475.chunk.js",
     "static/css/main.e813fc96.chunk.css",
-    "static/js/main.31ebc927.chunk.js"
+    "static/js/main.98eb683f.chunk.js"
   ]
 }
