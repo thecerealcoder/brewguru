@@ -1,11 +1,11 @@
-import React from "react"
+import React from "react";
 
 function NotFound() {
-    return(
-            <div className="flex notFound">
-                <p>We could not find any breweries for this query!</p>
-            </div>
-    )
+	return (
+		<div className="flex notFound">
+			<p>We could not find any breweries for this query!</p>
+		</div>
+	);
 }
 
-export default NotFound
+export default NotFound;
