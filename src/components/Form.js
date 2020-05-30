@@ -9,7 +9,7 @@ const apiBase = {
 };
 
 function Form() {
-	const [search, setSearch] = useState("city"); //Changes Placeholder text for search input
+	const [search, setSearch] = useState("city"); //Changes placeholder text for search input
 	const [query, setQuery] = useState("");
 	const [breweries, setBreweries] = useState({});
 

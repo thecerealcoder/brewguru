@@ -4,7 +4,7 @@ import Map from "./Map";
 function Brewery({ brewery: { name, street, state, city, postal_code, latitude, longitude } }) {
 	const [showMap, setShowMap] = useState(false);
 
-	/** Map components are not rendered until showMap is set to true
+	/** Map components are not rendered until showMap is set to true.
 	 * When location button for brewery is clicked upon, showMap is set
 	 * to true and the according map for that brewery is rendered.
 	 */

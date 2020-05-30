@@ -3,8 +3,8 @@ import NotFound from "./NotFound";
 import Brewery from "./Brewery";
 import { LoadScript } from "@react-google-maps/api";
 
-/** Renders a brewery component for each brewery in the list
- * Breweries must be encapsulated in a LoadScript component for multiple maps to work
+/** Renders a brewery component for each brewery in the list.
+ * Breweries must be encapsulated in a LoadScript component for multiple maps to work.
  */
 
 function Breweries(props) {

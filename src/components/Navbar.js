@@ -1,6 +1,7 @@
 import React from "react";
 
 function Navbar() {
+	//Fades search input in and out when search icon is clicked
 	function handleClick() {
 		if (document.getElementById("inputDiv") !== null) {
 			document.getElementById("inputDiv").classList.toggle("fadeOut");
